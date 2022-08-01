@@ -52,6 +52,6 @@ kafka-console-consumer --bootstrap-server localhost:9092 \
 # https://docs.confluent.io/platform/current/schema-registry/develop/using.html#
 
 # consume avro messages with key as string
-docker exec --interactive --tty schema-registry kafka-avro-console-consumer --bootstrap-server broker-1:9092  --key-deserializer org.apache.kafka.common.serialization.StringDeserializer --topic sales --from-beginning
+docker exec --interactive --tty schema-registry kafka-avro-console-consumer --bootstrap-server broker-1:9092  --key-deserializer org.apache.kafka.common.serialization.StringDeserializer --topic sales3 --from-beginning
 
 # topic _schemas for schema registry schemas

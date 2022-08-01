@@ -26,12 +26,12 @@ def fetch_wiki_edits()-> list:
 
 def produce_events(events:list):
     conf = {'bootstrap.servers': "localhost:19092,localhost:29092"}
-    topic = "wiki"
-
+    topic = req["nat"]
+    gender = req["gender"]
     producer = Producer(conf)
 
     for i in events:
-        producer.produce(topic=topic, value=str(i), callback=acked)
+        producer.produce(topic="completelynew", key=gender, value=str(i), callback=acked)
 
     producer.poll(1)
     producer.flush() 
