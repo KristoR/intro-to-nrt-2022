@@ -53,10 +53,5 @@ Navigate back to 00_Consumer notebook in Jupyter. If the last cell has started e
 
 ## Grafana
 Now, go back to Grafana (localhost:3000) and view the dashboard updating every 5 seconds.
-<<<<<<< HEAD
-=======
-
-Done.
->>>>>>> c889648ef8068a667a912e20910064ae237e27fb
 
 Done.
